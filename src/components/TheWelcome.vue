@@ -28,7 +28,7 @@ const getAuthors = async () => {
   try {
     const { data } = await axios.get(`http://waje-smart-backend.herokuapp.com/api/authors/`)
     console.log('data', data);
-    books.value = data
+    authors.value = data
   } catch (error) {
     console.log({error})
   }

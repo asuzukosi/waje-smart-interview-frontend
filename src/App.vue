@@ -12,8 +12,11 @@ import HelloWorld from './components/HelloWorld.vue'
 
       <nav>
         <RouterLink to="/">Waje Smart Interview Project</RouterLink>
-        <!-- <RouterLink to="/about">About</RouterLink> -->
+        <RouterLink to="/add_book">Add Book</RouterLink>
+        <RouterLink to="/add_author">Add Author</RouterLink>
+
       </nav>
+
     </div>
   </header>
 
