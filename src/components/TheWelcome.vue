@@ -11,6 +11,8 @@ import SupportIcon from './icons/IconSupport.vue'
 import { ref } from 'vue'
 
 const books = ref([])
+const authors = ref([])
+
 
 const getBooks = async () => {
   try {
@@ -22,7 +24,18 @@ const getBooks = async () => {
   }
 }
 
+const getAuthors = async () => {
+  try {
+    const { data } = await axios.get(`http://waje-smart-backend.herokuapp.com/api/authors/`)
+    console.log('data', data);
+    books.value = data
+  } catch (error) {
+    console.log({error})
+  }
+}
+
 getBooks();
+getAuthors();
 
 
 </script>
