@@ -1,0 +1,34 @@
+<script setup>
+    import WelcomeItem from './WelcomeItem.vue'
+    import DocumentationIcon from './icons/IconDocumentation.vue'
+    import ToolingIcon from './icons/IconTooling.vue'
+    import EcosystemIcon from './icons/IconEcosystem.vue'
+    import CommunityIcon from './icons/IconCommunity.vue'
+    import SupportIcon from './icons/IconSupport.vue'
+    </script>
+    
+    <template>
+      <WelcomeItem>
+        <template #icon>
+          <DocumentationIcon />
+        </template>
+        <template #heading>Book Info</template>
+    
+        Click
+        <a href="https://vuejs.org/" target="_blank" rel="noopener">here</a>
+        to get more information about the book
+      </WelcomeItem>
+    
+      <WelcomeItem>
+        <template #icon>
+          <DocumentationIcon />
+        </template>
+        <template #heading>Author</template>
+    
+        Click
+        <a href="https://vuejs.org/" target="_blank" rel="noopener">here</a>
+        to get more information about the book
+      </WelcomeItem>
+    
+    </template>
+    
