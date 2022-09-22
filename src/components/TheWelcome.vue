@@ -16,7 +16,7 @@ const authors = ref([])
 
 const getBooks = async () => {
   try {
-    const { data } = await axios.get(`http://waje-smart-backend.herokuapp.com/api/books/`)
+    const { data } = await axios.get(`https://waje-smart-backend.herokuapp.com/api/books/`)
     console.log('data', data);
     books.value = data
   } catch (error) {
@@ -26,7 +26,7 @@ const getBooks = async () => {
 
 const getAuthors = async () => {
   try {
-    const { data } = await axios.get(`http://waje-smart-backend.herokuapp.com/api/authors/`)
+    const { data } = await axios.get(`https://waje-smart-backend.herokuapp.com/api/authors/`)
     console.log('data', data);
     authors.value = data
   } catch (error) {

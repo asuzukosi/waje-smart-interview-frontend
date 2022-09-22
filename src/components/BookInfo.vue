@@ -20,7 +20,7 @@
 
     const getBook = async () => {
   try {
-    const { data } = await axios.get(`http://waje-smart-backend.herokuapp.com/api/books/` + route.params.id)
+    const { data } = await axios.get(`https://waje-smart-backend.herokuapp.com/api/books/` + route.params.id)
     book.value = data
 
     input_book_isbn.value = data.isbn
@@ -38,11 +38,11 @@
       "isbn": input_book_isbn.value
     }
     try{
-      const response = await axios.patch('http://waje-smart-backend.herokuapp.com/api/books/'+ route.params.id + "/", data)
+      const response = await axios.patch('https://waje-smart-backend.herokuapp.com/api/books/'+ route.params.id + "/", data)
       console.log(response)
       isLoading.value = true
       getBook()
-      
+
     }catch(error){
       console.log({error})
     }

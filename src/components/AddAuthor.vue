@@ -16,7 +16,7 @@
       "first_name": first_name.value,
       "last_name": last_name.value
     }
-    const response = await axios.post("http://waje-smart-backend.herokuapp.com/api/authors/", data)
+    const response = await axios.post("https://waje-smart-backend.herokuapp.com/api/authors/", data)
     console.log(response)
     route.push("/")
 

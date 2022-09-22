@@ -14,7 +14,7 @@
 
   const getAuthors = async () => {
   try {
-    const { data } = await axios.get(`http://waje-smart-backend.herokuapp.com/api/authors/`)
+    const { data } = await axios.get(`https://waje-smart-backend.herokuapp.com/api/authors/`)
     console.log('data', data);
     authors.value = data
     isLoading.value = false
@@ -30,7 +30,7 @@ const createBook = async () => {
       "isbn": isbn.value,
       "author": author.value,
     }
-    const response = await axios.post("http://waje-smart-backend.herokuapp.com/api/books/", data)
+    const response = await axios.post("https://waje-smart-backend.herokuapp.com/api/books/", data)
     console.log(response)
     route.push("/")
 
